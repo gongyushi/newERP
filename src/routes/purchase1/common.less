@@ -1,0 +1,63 @@
+:global{
+  .purchase{
+    .step{
+      .ant-steps-item-icon{
+        margin-left: 74px;
+      }
+    }
+    .table-step{
+      width: 90%;
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        .ant-steps-item-icon{
+          margin-left: 20px;
+        }
+      }
+      @media screen and (min-width: 1200px) and (max-width:2000px) {
+        .ant-steps-item-icon{
+          margin-left: 20px;
+        }
+      }
+      @media screen and (min-width: 2000px) {
+        .ant-steps-item-icon{
+          margin-left: -40px;
+        }
+      }
+    }
+    
+    .ant-table{
+      // line-height: 3;
+      .ant-table-thead{
+        tr{
+          font-size: 14px;
+        }
+      }
+    }
+    .goods-message{
+      width: 30%;
+      p{
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      .text-hidden{
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .button-radio{
+      .radio {
+        border:0px;
+        margin-right:10px;
+      }
+      ::before{
+        width:0px !important;
+      }
+    }
+  }
+  .ant-tooltip{
+    max-width: 300px;
+  }
+  
+}

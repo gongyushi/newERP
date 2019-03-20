@@ -1,0 +1,78 @@
+@import '~antd/lib/style/themes/default.less';
+.login {
+  .loginLeft {
+    float: left;
+    margin-left: 19%;
+    width: 29%;
+    img {
+      width: 100%;
+    }
+  }
+  .main {
+    width: 368px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 50px;
+    font-size: 12px;
+    float: right;
+    margin-right: 12%;
+    :global {
+      .ant-select-enabled {
+        height: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+        .ant-select-selection--single {
+          height: 30px;
+          img {
+            margin-bottom: 3px;
+          }
+        }
+      }
+      .ant-form-item {
+        margin-bottom: 20px;
+        height: 30px;
+        .ant-form-item-control {
+          line-height: 30px;
+        }
+        .ant-input-lg {
+          height: 30px;
+          .ant-input {
+            font-size: 12px;
+          }
+        }
+      }
+      .ant-input-affix-wrapper {
+        .ant-input {
+          font-size: 12px;
+        }
+      }
+      .ant-form {
+        .Login__other___18xgm {
+          margin-top: 50px;
+        }
+      }
+    }
+    .icon {
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.2);
+      margin-left: 16px;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+
+    .other {
+      text-align: left;
+      margin-top: 24px;
+      line-height: 22px;
+      font-size: 12px;
+      .register {
+        float: right;
+      }
+    }
+  }
+}

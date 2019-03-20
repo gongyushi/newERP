@@ -1,0 +1,359 @@
+html,
+body,
+:global(#root) {
+  height: 100%;
+
+  .ant-table {
+    font-size: 12px;
+  }
+}
+
+:global {
+  // 基本设置
+  .ant-layout>.ant-layout-content>.ant-tabs>.ant-tabs-content{
+    margin: 0 !important;
+  }
+  .ant-radio-button-wrapper-checked{
+    -webkit-box-shadow:-1px 0 0 0 #ffffff !important;
+  }
+  .ant-tabs-bar{
+    margin: 0 !important;
+  }
+  .textCenter {
+    text-align: center !important;
+  }
+  .ant-tree-title {
+    width: 150px;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .erp {
+    .erpContent {
+      -webkit-filter: blur(10px);
+    }
+    .erpBack {
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 5000;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+  .ant-select-selection--single {
+    height: 26px !important;
+    .ant-select-selection__rendered {
+      line-height: 26px !important;
+    }
+  }
+  .ant-input {
+    height: 26px !important;
+  }
+  // 组织架构
+  .organModal {
+    font-size: 12px;
+    .ant-form-item {
+      margin: 0;
+      font-size: 12px !important;
+    }
+  }
+  // 表格的设置
+  .ant-table table tr th,
+  .ant-table table tr td {
+    padding: 2px 5px !important;
+  }
+  table {
+    // width: 100%;
+    text-align: center;
+    border-radius: 0;
+    display: table;
+    border: 1px solid #dcdcdc !important;
+    border-collapse: collapse !important;
+    font-size: 12px;
+    // .ant-table table .ant-table-thead tr th{
+    //   border-right: 1px solid #dcdcdc;
+    //   border-bottom: 1px solid #dcdcdc;
+    //   text-align: center;
+    //       background: #e5e8ee;
+    // }
+    .ant-table-thead > tr > th {
+      border: 1px solid #dcdcdc;
+      background: #e5e8ee;
+      text-align: center;
+    }
+    tbody {
+      tr:hover {
+        background: #e6f7ff;
+      }
+    }
+    td {
+      border: 1px solid #dcdcdc;
+      text-align: center;
+    }
+  }
+  .width60 {
+    width: 60px !important;
+  }
+  .width70 {
+    width: 60px !important;
+  }
+  .width80 {
+    width: 80px !important;
+  }
+  .width90 {
+    width: 90px !important;
+  }
+  .width100 {
+    width: 100px !important;
+  }
+  .width110 {
+    width: 110px !important;
+  }
+  .width120 {
+    width: 120px !important;
+  }
+  .width130 {
+    width: 130px !important;
+  }
+  .width140 {
+    width: 140px !important;
+  }
+  .width150 {
+    width: 150px !important;
+  }
+  .width160 {
+    width: 160px !important;
+  }
+  .width180 {
+    width: 180px !important;
+  }
+  .width200 {
+    width: 200px !important;
+  }
+  .width230 {
+    width: 230px !important;
+  }
+  .width250 {
+    width: 250px !important;
+  }
+  .width260 {
+    width: 260px !important;
+  }
+  .width270 {
+    width: 270px !important;
+  }
+  .width300 {
+    width: 300px !important;
+  }
+  .width400 {
+    width: 400px !important;
+  }
+  .width440 {
+    width: 440px !important;
+  }
+  .ant-tabs-tabpane > div {
+    margin: 0 10px;
+    padding: 10px 15px;
+  }
+  // 内容的设置
+  .ant-tabs-content {
+    background: #fff;
+  }
+  // 按钮的设置
+  .ant-btn-primary {
+    margin: 2px 0;
+    height: 24px;
+    font-size: 12px !important;
+  }
+  .buttonBul,.buttonDel {
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .buttonBul:hover {
+    background: #1890ff !important;
+    color: #fff !important;
+  }
+  .buttonDel:hover {
+    background: #ff4d4f !important;
+    color: #fff !important;
+    border: 1px solid #ff4d4f !important;
+  }
+  // 启用
+  .startEnabled {
+    color: #518ded !important;
+  }
+  // 禁用
+  .disable {
+    color: #f64b33 !important;
+  }
+  .ant-layout > .ant-layout-content > .ant-tabs > .ant-tabs-content {
+    background: #fff;
+  }
+  #root .ant-form {
+    margin-bottom: 10px;
+  }
+  #root .ant-table {
+    font-size: 12px;
+  }
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+    padding: 0 5px;
+  }
+  .ant-table-tbody > tr > td {
+    padding: 2px 5px !important;
+    // height: 40px;
+    font-size: 12px;
+    & > div {
+      // height: 35px;
+      overflow: hidden;
+    }
+  }
+
+  #root {
+    .ant-layout-sider {
+      background: #fff;
+    }
+    .ant-layout-header {
+      width: 100%;
+      float: none;
+      background: #518ded;
+      height: 60px;
+      line-height: 60px;
+      position: fixed;
+      z-index: 11;
+      > div {
+        background: #518ded;
+        z-index: 11;
+      }
+    }
+    .ant-layout {
+      flex-direction: column;
+      background: #fff;
+    }
+    .sider-content {
+      display: flex;
+      flex: 1;
+      margin-top: 70px;
+    }
+    .self-menu {
+      display: inline-block;
+      a {
+        color: #fff;
+        padding: 9px 18px;
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      .active {
+        font-weight: bold;
+        font-size: 16px;
+        border-bottom: 4px solid #fff;
+      }
+    }
+  }
+}
+
+:global(.ant-layout) {
+  min-height: 100%;
+}
+
+:global {
+  .ant-layout-content {
+    // background: #fff;
+    // padding: 20px 15px;
+    // background: #f0f2f5 !important;
+  }
+}
+:global {
+  .ant-spin-container {
+    overflow: visible !important;
+  }
+}
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+:global{
+  .ant-card-head-title {
+    // font-weight: bold;
+    color: #000;
+  }
+  .cardHeadStyle {
+    padding: 10px 0;
+    background-color: #fff;
+  }
+}
+:global{
+  // 一行默认样式修改
+  .ant-table-thead > tr{
+    height: 50px;
+  }
+  .ant-table-body tr.ant-table-row{
+    height: 40px;
+  }
+  .table-one-line {
+    .ant-table-thead > tr{
+      height: 50px;
+    }
+    .ant-table-body tr.ant-table-row{
+      height: 40px;
+    }
+  }
+  .table-two-line {
+    .ant-table-thead > tr{
+      height: 50px;
+    }
+    .ant-table-body tr.ant-table-row{
+      height: 70px;
+    }
+  }
+  .table-three-line {
+    .ant-table-thead > tr{
+      height: 50px;
+    }
+    .ant-table-body tr.ant-table-row{
+      height: 70px;
+    }
+  }
+  .table-four-line {
+    .ant-table-thead > tr{
+      height: 50px;
+    }
+    .ant-table-body tr.ant-table-row{
+      height: 85px;
+    }
+  }
+  .table-five-line {
+    .ant-table-thead > tr{
+      height: 50px;
+    }
+    .ant-table-body tr.ant-table-row{
+      height: 100px;
+    }
+  }
+  .table-head-double-line{
+    .ant-table-thead > tr{
+      height: 100px;
+    }
+  }
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7

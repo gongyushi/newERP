@@ -1,0 +1,67 @@
+:global {
+  .ant-tabs-bar {
+    margin: 0;
+  }
+  .ant-tabs-content {
+    background: #fff;
+  }
+  .management {
+    .ant-table-tbody > tr > td > div {
+      overflow-y: auto;
+    }
+    .tableLi>div::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .tableLi {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      // .textCenter{
+      //   width: 80px !important;
+      // }
+      &>div {
+        // overflow: hidden;
+        height: 40px;
+        & > p {
+          float: left;
+          width: 120px;
+          margin: 10px 0 0 0;
+          text-align: left;
+        }
+        & > p.tableLi-p {
+          float: left;
+          width: 35px;
+          margin: 10px 0 0 0;
+          text-align: left;
+        }
+        & > div {
+          float: left;
+          margin-top: 8px;
+        }
+      }
+    }
+    .text-overflow{
+      overflow:hidden; 
+      text-overflow:ellipsis;
+      display:-webkit-box; 
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:3; 
+    }
+    button {
+      margin: 2px 0;
+      width: 60px;
+    }
+  }
+}
+.toolbar {
+  padding: 20px 15px;
+  background: #fff;
+  .toolButton {
+    margin: 10px 0;
+    button {
+      margin-right: 5px;
+    }
+  }
+}

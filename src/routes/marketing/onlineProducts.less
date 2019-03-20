@@ -1,0 +1,273 @@
+:global {
+  .ant-tabs-bar {
+    margin: 0;
+  }
+  .ant-tabs-content {
+    background: #fff;
+  }
+  .store{
+    overflow: hidden;
+    &>p{
+      float: left;
+      margin: 0;
+      margin-right: 5px;
+      margin-top: 4px;
+    }
+    
+    .radio{
+      float: left;
+      :global{
+        .ant-radio-button-wrapper{
+          border: 0;
+        }
+        .ant-radio-button-wrapper::before{
+          background: #fff;
+        }
+        .ant-radio-button-wrapper-checked::before {
+            background-color: #fff !important;
+            opacity: 0.1;
+        }
+      }
+      
+    }
+  }
+}
+.onlineButton {
+  margin: 10px 0;
+  button {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+
+.onlineProducts {
+  padding: 10px 15px;
+  
+  table {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-collapse: collapse;
+    font-size: 12px;
+    .prod_name{
+      color: #dcdcdc;
+    }
+    thead {
+      background: #e5e8ee;
+      tr {
+      }
+    }
+    tbody {
+      tr:hover {
+        background: #e6f7ff;
+      }
+    }
+    td {
+      border: 1px solid #dcdcdc;
+      text-align: center;
+    }
+  }
+}
+// 趋势分析
+:global{
+  .expectTable{
+      color: #dcdcdc;
+      .ant-table table tr th, .ant-table table tr td{
+        height: 40px;
+      }
+      .ant-table-tbody > tr > td > div{
+        overflow: visible;
+      }
+    }
+  .onlineDemand {
+    padding: 20px 15px;
+    .chart {
+      width: 830px;
+      padding: 10px;
+      border: 1px solid #dcdcdc;
+    }
+    .title::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .title{
+      border-bottom: 1px solid #dcdcdc;
+      margin-top: 20px;
+      h3{
+        float: left;
+      }
+      &>div{
+        float: right;
+        // overflow: hidden;
+        &>div{
+          float: left;
+        }
+      }
+    }
+    .content{
+      // padding: 10px;
+      overflow: hidden;
+      .chart{
+        width: 49%;
+        float: left;
+        margin-right:10px;
+        overflow: hidden;
+        margin-top: 10px;
+        position: relative;
+        .tabs{
+          position: absolute;
+          left:10px;
+          top:10px;
+        }
+      }
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+      }
+    .baseList{
+      margin-top:10px;
+      &>li{
+        margin-bottom: 10px;
+        overflow: hidden;
+        &>p{
+          width:5%;
+          min-width: 100px;
+          float: left;
+          margin-bottom: 0;
+        }
+        &>div{
+          width: 90%;
+          float: left;
+        }
+        &>span{
+          margin-left: 10px;
+        }
+        ul{
+          overflow: hidden;
+          li{
+            float: left;
+            width: 25%;
+            margin-bottom: 10px;
+            span{
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 补货需求
+.replenish {
+  background: #fff;
+  overflow: hidden;
+  padding: 30px 20px;
+  font-size: 12px;
+  .repChart {
+    width: 50%;
+    float: left;
+    margin-right: 1%;
+    padding: 0;
+    li {
+      list-style: none;
+      border: 1px solid #dcdcdc;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  }
+  .repContent {
+    width: 48%;
+    float: right;
+    & > div {
+      border: 1px solid #dcdcdc;
+      margin-bottom: 20px;
+      & > div {
+        overflow: hidden;
+        padding: 20px;
+        .repImg {
+          width: 18%;
+          height: 18%;
+          float: left;
+          margin-right: 20px;
+          border: 1px solid #dcdcdc;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .repContentMessage {
+          float: left;
+          width: 78%;
+          p {
+          }
+        }
+      }
+    }
+    .repContentTable {
+      ul {
+        display: none;
+      }
+    }
+    .parameter {
+      font-size: 12px;
+      ul {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        li {
+          :global {
+            .ant-progress-line {
+              width: 140px;
+            }
+            .ant-btn {
+              padding: 0;
+              line-height: 0;
+              height: 15px;
+              margin-right: 5px;
+            }
+            .ant-input {
+              height: 26px;
+              padding: 0 10px;
+              width: 195px;
+            }
+          }
+          list-style: none;
+          width: 50%;
+          float: left;
+          margin-bottom: 10px;
+          b {
+            display: inline-block;
+            width: 85px;
+            font-weight: normal;
+            text-align: right;
+          }
+
+          button {
+          }
+        }
+      }
+      .inventory {
+        ul {
+          li {
+            float: none;
+          }
+        }
+      }
+    }
+    .repContentTitle {
+      width: 100%;
+      height: 40px;
+      background: rgba(81, 141, 237, 1);
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  .showModals {
+    height: 800px;
+  }
+}
